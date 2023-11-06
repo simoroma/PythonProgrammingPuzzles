@@ -17,10 +17,10 @@ SEEDS = 1 # number of times to run it
 PARAMS = dict(
     temp=0.9,
     timeout=1.0,  # seconds to judge
-    n=32, # number of attempts per puzzle, usually 1000, or set small for a fast run
+    n=1, # number of attempts per puzzle, usually 1000, or set small for a fast run
     filename="30puzzles.json",  # set to 397puzzles.json for a run on full v0.2 dataset
     cache_only=False,  # change this to True if you want to run a 2nd time without risking hitting API
-    engine="cushman-codex",  # FAST-CODEX: "cushman-codex" CODEX: "davinci-codex"  GPT3: "davinci"
+    engine="gpt-3.5-turbo-instruct",  # FAST-CODEX: "cushman-codex" CODEX: "davinci-codex"  GPT3: "davinci"
 )
 
 BOOTSTRAP_PARAMS = dict(

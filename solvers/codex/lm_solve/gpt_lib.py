@@ -82,7 +82,9 @@ class Cache:
 BATCH_SIZES = {
     "davinci": 32,
     "davinci-codex": 128, 
-    "cushman-codex": 128
+    "cushman-codex": 128,
+    "gpt-3.5-turbo-instruct": 32
+    
 }
 
 CACHES = {cache: Cache(os.path.join(_CACHE_PATH, cache + ".cache")) for cache in BATCH_SIZES}
