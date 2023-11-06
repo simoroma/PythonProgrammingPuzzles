@@ -98,7 +98,7 @@ def query(prompt, n=10, max_tokens=150, temp=1.0, max_batch=32, stop=None, notes
         m = min(n, max_batch)
 
         res = openai.Completion.create(
-            engine="davinci-msft",
+            engine="gpt-3.5-turbo-instruct",
             prompt=prompt,
             max_tokens=max_tokens,
             temperature=temp,
